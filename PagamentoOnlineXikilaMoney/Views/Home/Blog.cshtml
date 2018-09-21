@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@{
+    ViewBag.Title = "Blog";
+}
+
+<div class="header">
+    <div>
+        <h1>Blog</h1>
+    </div>
+</div>
+<div class="blog">
+    <div class="featured">
+        <ul>
+            <li>
+                <img src="~/Content/images/new-chills.png" alt="">
+                <div>
+                    <h1>NEW CHILLS FOR SUMMER</h1>
+                    <span>By Admin on November 28, 2023</span>
+                    <p>You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.</p>
+                    @Html.ActionLink("Single Post", "SinglePost", "Home", null, new { @class = "more" })
+                </div>
+            </li>
+            <li>
+                <img src="~/Content/images/berries.png" alt="">
+                <div>
+                    <h1>BERRIES ON THE GROVE</h1>
+                    <span>By Admin on November 28, 2023</span>
+                    <p>You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.</p>
+                    @Html.ActionLink("Single Post", "SinglePost", "Home", null, new { @class = "more" })
+                </div>
+            </li>
+        </ul>
+        @Html.ActionLink("Load More", "SinglePost", "Home", null, new { @class = "load" })
+    </div>
+    <div class="sidebar">
+        <h1>Recent Posts</h1>
+        <img src="~/Content/images/on-diet.png" alt="">
+        <h2>ON THE DIET</h2>
+        <span>By Admin on November 28, 2023</span>
+        <p>You can replace all this text with your own text. You can remove any link to our website from this website template.</p>
+        @Html.ActionLink("Single Post", "SinglePost", "Home", null, new { @class = "more" })
+    </div>
+</div>

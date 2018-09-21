@@ -1,0 +1,9 @@
+﻿input#image-button {
+    background: #D22030 url('../images/Paga Com XM (3).png') no-repeat top left;
+    /* padding-left:16px;*/
+    width: 285px;
+    height: 75px;
+    border-radius: 25px;
+   margin-top:30px; 
+
+}
